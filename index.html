@@ -5,20 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Alphabet Guessing Game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type='text/css' media='screen' href='assets/css/reset.css'/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/styles.css" />
     
 </head>
 <body>
-  
-    <h1>Psychic Game</h1>
-
-    <h2>Guess what letter I'm thinking of...</h2>
-
-    <p>Wins: </p><span id="wins"></span>
-    <p>Losses: </p><span id="losses"></span>
-    <p>Guesses Left: </p><span id="guessLeft"></span>
-    <p>Your guesses so far: </p><span id="guess-so-far"></span>
-
-  <script src="assets/javascript/javascript.js"></script>   
+    <div class="container">
+        <div class='header'>
+            <h1>Psychic Game</h1>
+        
+            <h2>Guess what letter I'm thinking of...</h2>
+        </div>
+       
+       <div class='row'>
+            <div class='col-sm-6'>   
+                <div class="card">
+                    <div class="card-body">
+                    <p>Wins: </p><span id="wins"></span>
+                    </div>
+                </div>
+            </div>
+            <div class='col-sm-6'> 
+                <div class="card">
+                    <div class="card-body">
+                    <p>Losses: </p><span id="losses"></span>
+                    </div>
+                </div>
+            </div>     
+        </div>
+        <div class='row'>   
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                    <p>Guesses Left: </p><span id="guessLeft"></span>
+                    </div>
+                </div>
+            </div>    
+            <div class='col-sm-6'>   
+                <div class="card">
+                    <div class="card-body">
+                    <p>Your guesses so far: </p><span id="guess-so-far"></span>
+                    </div>
+                </div>
+            </div> 
+        </div> 
+    
+    </div>
+    
+    <script src="assets/javascript/javascript.js"></script>   
 </body>
 </html>
